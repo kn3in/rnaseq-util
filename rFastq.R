@@ -11,7 +11,7 @@ fastqFiles <- dir(pattern = "*.fastq.gz$")
 sampl_name <- unique(str_split_fixed(fastqFiles,"_[1,2].fastq.gz$" , n=2)[ ,1])
 
 # Be nice
-ncores <- min(length(fastqFiles), 40) 
+ncores <- min(length(sampl_name), 40)
 
 mclapply(sampl_name, function(fl) {
   base <- paste("tmp", fl, sep="/")
