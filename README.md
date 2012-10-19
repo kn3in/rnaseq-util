@@ -8,3 +8,5 @@ utilities for rnaseq:
 * rFastq.R: sample 10e6 paired reads, save to a tmp folder
 
 * paintCuffFlags.R: convert [cufflinks](http://cufflinks.cbcb.umd.edu/) gtf to bed and set itemRgb according to transcript flag
+
+* GetFasta.R: pull sequence in fasta format from GenBank based on genebak id
