@@ -9,4 +9,4 @@ utilities for rnaseq:
 
 * paintCuffFlags.R: convert [cufflinks](http://cufflinks.cbcb.umd.edu/) gtf to bed and set itemRgb according to transcript flag
 
-* GetFasta.R: pull sequence in fasta format from GenBank based on genebak id
+* GetFasta.R: pull sequence in fasta format from GenBank based on genbank id
