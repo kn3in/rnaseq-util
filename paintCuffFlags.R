@@ -23,4 +23,9 @@ tr2col <- merge(tr2code, lupt, by.x="class_code", by.y="flags", all.x=TRUE)
 grl_cm <- split(cuffMerged, values(cuffMerged)$transcript_id)
 values(grl_cm)$itemRgb <- tr2col[match(names(grl_cm), tr2col$transcript_id), "col"]
 
+# Optionaly supress thick encoding (thickStart, thickEnd in BED terminology)
+# my_bed <- asBED(grl_cm)
+# my_bed$thick <- IRanges(end(ranges(my_bed)), width=0)
+# export(my_bed, "merged.bed", "bed")
+
 export(grl_cm, "merged.bed", "bed")
