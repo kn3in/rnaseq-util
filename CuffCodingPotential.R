@@ -64,8 +64,9 @@ system("cpat.py -g Merged.fa -o Mergedcpat -d ~/src/CPAT-1.2.1/dat/Human_train.R
 #---------------------------------------------------------------
 cpat <- read.table("Mergedcpat", sep="\t", header=TRUE)
 # !!!Human cut-off, change for your species accordingly!!!
+cut.off <- 0.363
 # Darkgreen->Coding; Indianred->Non-coding
-cpat$col <- ifelse(cpat$coding_prob >=0.363, "darkgreen", "indianred")
+cpat$col <- ifelse(cpat$coding_prob >= cut.off, "darkgreen", "indianred")
 cpat$trx_id <- rownames(cpat)
 rownames(cpat) <- NULL
 cpat<-cpat[ ,c("trx_id", "col")]
