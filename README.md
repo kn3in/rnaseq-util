@@ -10,3 +10,5 @@ utilities for rnaseq:
 * paintCuffFlags.R: convert [cufflinks](http://cufflinks.cbcb.umd.edu/) gtf to bed and set itemRgb according to transcript flag
 
 * GetFasta.R: pull sequence in fasta format from GenBank based on genbank id
+
+* CuffCodingPotential.R: predict coding potential using [CPAT](http://dldcc-web.brc.bcm.edu/lilab/liguow/CGI/cpat/_build/html/index.html) export as bed with colour coded coding potential. 
