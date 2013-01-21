@@ -11,4 +11,6 @@ utilities for rnaseq:
 
 * GetFasta.R: pull sequence in fasta format from GenBank based on genbank id
 
-* CuffCodingPotential.R: predict coding potential using [CPAT](http://dldcc-web.brc.bcm.edu/lilab/liguow/CGI/cpat/_build/html/index.html) export as bed with colour coded coding potential. 
+* CuffCodingPotential.R: predict coding potential using [CPAT](http://dldcc-web.brc.bcm.edu/lilab/liguow/CGI/cpat/_build/html/index.html) export as bed with colour coded coding potential.
+
+* unmappedBam2fq.R: Ever wonder where [tophat's](http://tophat.cbcb.umd.edu/) unmapped.bam reads come from? Convert unmapped.bam file to fastq (apply sequence quality and complexity filters). Now you are set to run [Trinity](http://trinityrnaseq.sourceforge.net/) on fastq files.
