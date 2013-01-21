@@ -1,4 +1,4 @@
-#!/hox/g/uq/sw/x86_64/R/2.15.1/bin/Rscript
+#!/usr/bin/env Rscript
 
 # aggregate htseq-counts output into a data frame
 # discard genes with 0 counts across all samples
